@@ -111,7 +111,7 @@ class AuthorController extends Controller
 
             $author->save();
 
-            return response(["message" => "Update data success.", "data" => $author], 204);
+            return response(["message" => "Update data success.", "data" => $author], 200);
         }else{
             return response(["message" => "Update data failed.", "data" => null], 406);
         }
